@@ -66,7 +66,10 @@ textarea {
 
 
 body {
+    background-color: #00759A;
+    background-image: -webkit-gradient(radial, center center, 460, center center, 0, from(#00759A), to(#28ABCA));
     text-rendering: optimizeLegibility;
+    font-family: 'Pacifico', cursive;
     font-size: 1em;
 }
 
@@ -75,20 +78,62 @@ body {
     margin: 0 auto;
 }
 
+.heading {
+    text-align: center;
+    font-size: 4em;
+    font-weight: normal;
+    color: #FFF;
+}
 
 .presentation {
     padding: 40px;
     margin: 20px;
     background-color: #F7F7F9;
-    border-radius: 4px;
-    box-shadow: 0 2px 2px rgba(0,0,0,.05);
-    border: 1px solid #E1E1E8;
+    box-shadow: 0 2px 2px rgba(0,0,0,.085);
     text-align: center;
-}
 
+    /* ANIMATION */
+
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+}
 
 .presentation ul {
     display: inline-block;
+}
+
+/* ANIMATIONFRAMES */
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+                transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+                transform: none;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+                transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+                transform: none;
+    }
 }
 
 /* ==========================================================================
