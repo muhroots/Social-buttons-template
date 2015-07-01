@@ -1,0 +1,114 @@
+.social-buttons {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.social-buttons > li {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.social-buttons > li:last-child {
+	margin-right: 0;
+}
+
+.social-buttons > li > a {
+	display: block;
+	width: 32px;
+	height: 32px;
+	background-color: #222;
+	background-size: 60%;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-transition: transform 200ms ease, color 300ms linear;
+	     -o-transition: transform 200ms ease, color 300ms linear;
+			transition: transform 200ms ease, color 300ms linear;
+	text-decoration: none;
+	text-indent: -9995px;
+}
+
+.social-buttons > li > a:hover,
+.social-buttons > li > a:focus {
+	outline: none;
+	-webkit-transition: transform 200ms ease, color 300ms linear;
+		 -o-transition: transform 200ms ease, color 300ms linear;
+			transition: transform 200ms ease, color 300ms linear;
+
+	-webkit-transform: scale(1.255);
+		-ms-transform: scale(1.255);
+		 -o-transform: scale(1.255);
+			transform: scale(1.255);
+}
+
+/* DEFAULT */
+
+.social-buttons .facebook {
+	background-image: url('../img/facebook.svg');
+}
+
+.social-buttons .twitter {
+	background-image: url('../img/twitter.svg');
+}
+
+.social-buttons .gplus {
+	background-image: url('../img/gplus.svg');
+}
+
+.social-buttons .instagram {
+	background-image: url('../img/instagram.svg');
+}
+
+.social-buttons .spotify {
+	background-image: url('../img/spotify.svg');
+}
+
+/* THEME */
+
+.social-buttons .facebook:hover,
+.social-buttons .facebook:focus,
+.theme .facebook {
+	background-color: #3B579D;
+}
+
+.social-buttons .twitter:hover,
+.social-buttons .twitter:focus,
+.theme .twitter {
+	background-color: #55ACEE;
+}
+
+.social-buttons .instagram:hover,
+.social-buttons .instagram:focus,
+.theme .instagram {
+	background-color: #005787;
+}
+
+.social-buttons .gplus:hover,
+.social-buttons .gplus:focus,
+.theme .gplus {
+	background-color: #A8392B;
+}
+
+.social-buttons .spotify:hover,
+.social-buttons .spotify:focus,
+.theme .spotify {
+	background-color: #57BB63;
+}
+
+/* STYLE */
+
+.rounded > li > a {
+	border-radius: 50%;
+}
+
+/* SIZE */
+
+.medium > li > a {
+	width: 42px;
+	height: 42px;
+}
+
+.large > li > a {
+	width: 62px;
+	height: 62px;
+}
